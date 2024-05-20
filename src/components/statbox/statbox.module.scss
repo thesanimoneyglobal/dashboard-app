@@ -1,0 +1,31 @@
+@import "src/common/scss/index";
+
+.container {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding;
+  border-radius: $border-radius;
+}
+
+.stats {
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.heading {
+  align-self: start;
+  font-weight: 600;
+}
+
+.increase-text {
+  font-style: italic;
+}
+
+.progress {
+  row-gap: 20px;
+  flex-direction: column;
+}
+

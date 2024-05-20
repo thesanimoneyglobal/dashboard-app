@@ -1,0 +1,28 @@
+html[data-theme=light] {
+  --background-color: #f2f0f0;
+  --color-primary: #141414;
+  --color-secondary: #2e7c67;
+}
+
+html[data-theme=dark] {
+  --background-color: #1F2A40;
+  --color-primary: #e0e0e0;
+  --color-secondary: #94e2cd;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: start;
+  background-color: var(--background-color);
+  color: var(--color-primary);
+}
+
+.list-item {
+  background-color: var(--background-color);
+  color: var(--color-primary);
+  border-radius: 5px !important;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=transactions.module.css.map */

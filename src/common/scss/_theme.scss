@@ -1,0 +1,23 @@
+@import "variables";
+
+html[data-theme='light'] {
+  --background-color: #{map-get($light-mode-colors, primary, 400)};
+  --color-primary: #{map-get($light-mode-colors, grey, 100)};
+  --color-secondary: #{map-get($light-mode-colors, green-accent, 300)};
+}
+
+html[data-theme='dark'] {
+  --background-color: #{map-get($dark-mode-colors, primary, 400)};
+  --color-primary: #{map-get($dark-mode-colors, grey, 100)};
+  --color-secondary: #{map-get($dark-mode-colors, green-accent, 300)};
+}
+
+@mixin themedStyle($primary) {
+  background-color: var(--background-color);
+
+  @if($primary == 'primary') {
+    color: var(--color-primary);
+} @else {
+    color: var(--color-secondary);
+  }
+}

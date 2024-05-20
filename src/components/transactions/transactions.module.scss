@@ -1,0 +1,14 @@
+@import '../../common/scss/index';
+
+.container {
+  border-radius: $border-radius;
+  padding: $container-padding;
+  text-align: start;
+  @include themedStyle('primary')
+}
+  .list-item {
+    @include themedStyle('primary');
+    border-radius: $border-radius!important;
+    margin-bottom: 10px;
+  }
+
